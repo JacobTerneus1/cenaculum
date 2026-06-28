@@ -22,7 +22,7 @@ pages/
 
 - Jekyll only processes Markdown files that include YAML front matter.
 - `index.md` and files in `pages/` should start with `---` and `layout: default`.
-- The shared layout lives in `_layouts/default.html` and links `/common.css`.
+- The shared layout lives in `_layouts/default.html` and links `common.css` with `relative_url`.
 - The home page lives in `index.md`. Sections are delimited by `##` headings and `---` rules.
 - Sub-pages go under `pages/`.
 - All CSS is in `common.css`. Uses custom properties (colors, spacing, shadows) for consistency.
