@@ -1,16 +1,16 @@
+---
+layout: default
+---
+
 # Cenaculum
 
 An immersive Latin retreat.
 
 ---
 
-[Home](#home) · [About](#about) · [Highlights](#highlights) · [Schedule](#schedule)  · [Venue](#venue) · [Register](#register) · [FAQ](#faq)
+[About](#about) · [Highlights](#highlights) · [Schedule](#schedule)  · [Venue](#venue) · [Register](#register) · [FAQ](#faq)
 
 ---
-
-## Home
-
-Welcome to Cenaculum, an immersive Latin retreat.
 
 ## About
 
