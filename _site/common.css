@@ -454,9 +454,10 @@ button:hover {
 
 .footer__grid {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   gap: 24px;
   flex-wrap: wrap;
+  text-align: center;
 }
 
 .footer__links {
