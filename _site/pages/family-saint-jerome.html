@@ -3,16 +3,148 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Cenaculum</title>
-  <link rel="stylesheet" href="/cenaculum/common.css">
+  <title>Family of Saint Jerome</title>
+  <link rel="stylesheet" href="/common.css">
 </head>
 <body>
-  <h1 id="family-of-saint-jerome">Family of Saint Jerome</h1>
+  <header class="site-header">
+    <div class="container nav">
+      <a class="logo" href="/">Cenaculum</a>
+      <nav class="nav__links" aria-label="Primary">
+        <span data-lang="eng"><a href="/pages/family-saint-jerome.html">Family of Saint Jerome</a></span>
+        <span data-lang="lat" hidden><a href="/pages/family-saint-jerome.html">Familia Sancti Hieronymi</a></span>
+        <a class="button button--secondary" href="?lang=eng" data-lang-toggle="eng" aria-pressed="true" aria-label="Show English">ENG</a>
+        <a class="button button--ghost" href="?lang=lat" data-lang-toggle="lat" aria-pressed="false" aria-label="Show Latin">LAT</a>
+      </nav>
+    </div>
+  </header>
 
-<h2 id="what-is-the-family-of-saint-jerome">What is the Family of Saint Jerome</h2>
+  <main>
+    <section class="section">
+  <div class="container center">
+    <div data-lang="eng">
+      <div class="eyebrow">About the community</div>
+      <h1>Family of Saint Jerome</h1>
+      <p class="lede">The community that supports Cenaculum and related apostolates of prayer, Latin liturgy, hospitality, and friendship.</p>
+      <div class="hero__actions">
+        <a class="button" href="/">Back to Cenaculum</a>
+      </div>
+    </div>
 
-<h2 id="history-of-the-family-of-saint-jerome">History of the Family of Saint Jerome</h2>
+    <div data-lang="lat" hidden="">
+      <div class="eyebrow">De communitate</div>
+      <h1>Familia Sancti Hieronymi</h1>
+      <p class="lede">Communitas quae Cenaculum atque alia apostolata precationis, liturgiae Latinae, hospitalitatis, et amicitiae sustinet.</p>
+      <div class="hero__actions">
+        <a class="button" href="/">Ad Cenaculum redi</a>
+      </div>
+    </div>
+  </div>
+</section>
 
+<section class="section section--soft">
+  <div class="container">
+    <div data-lang="eng">
+      <div class="section__header">
+        <div class="eyebrow">What it is</div>
+        <h2>What the Family is for</h2>
+      </div>
 
+      <div class="card-grid">
+        <div class="card">
+          <h3>Prayer and formation</h3>
+          <p>The Family of Saint Jerome exists to help Catholics live the faith more deeply, with a particular love for Latin prayer, the liturgy, and faithful formation.</p>
+        </div>
+
+        <div class="card">
+          <h3>Hospitality</h3>
+          <p>Cenaculum is one of the chief ways this life is made visible: a place where prayer, study, meals, and conversation are shared patiently and concretely.</p>
+        </div>
+
+        <div class="card">
+          <h3>Friendship</h3>
+          <p>The community is not only about events. It is also about friendship that continues before and after Cenaculum, across years and places.</p>
+        </div>
+      </div>
+    </div>
+
+    <div data-lang="lat" hidden="">
+      <div class="section__header">
+        <div class="eyebrow">Quid sit</div>
+        <h2>Cui rei Familia sit</h2>
+      </div>
+
+      <div class="card-grid">
+        <div class="card">
+          <h3>Precatio et formatio</h3>
+          <p>Familia Sancti Hieronymi instituta est ut fideles ad vitam christianam altius ducendam adiuvet, cum peculiari amore erga precationem Latinam, liturgiam, atque formationem fidelem.</p>
+        </div>
+
+        <div class="card">
+          <h3>Hospitalitas</h3>
+          <p>Cenaculum una ex praecipuis viis est quibus haec vita conspicua fit: locus ubi precatio, studium, cibus, atque sermo patienter et concrete communicantur.</p>
+        </div>
+
+        <div class="card">
+          <h3>Amicitia</h3>
+          <p>Communitas non solum de eventibus agit. De amicitia etiam agit, quae ante Cenaculum et post Cenaculum, per annos et per loca, perseverat.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <div data-lang="eng">
+      <div class="section__header">
+        <div class="eyebrow">History</div>
+        <h2>A brief history</h2>
+      </div>
+
+      <div class="card">
+        <p>The Family of Saint Jerome grew out of a desire to keep Latin prayer, Latin liturgy, and Catholic learning close together. Cenaculum developed as a natural expression of that vision, and the community continues to gather around it each year.</p>
+      </div>
+    </div>
+
+    <div data-lang="lat" hidden="">
+      <div class="section__header">
+        <div class="eyebrow">Historia</div>
+        <h2>Brevis historia</h2>
+      </div>
+
+      <div class="card">
+        <p>Familia Sancti Hieronymi ex desiderio orta est precationem Latinam, liturgiam Latinam, atque studia catholica inter se coniungere. Cenaculum tamquam expressio naturalis huius visionis paulatim evolutum est, et communitas circa illud quotannis convenire pergit.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer__grid">
+      <p class="muted">&copy; Jacob Terneus 2026</p>
+    </div>
+  </footer>
+
+  <script>
+    (() => {
+      const lang = new URLSearchParams(window.location.search).get('lang') === 'lat' ? 'lat' : 'eng';
+
+      document.documentElement.lang = lang === 'lat' ? 'la' : 'en';
+
+      document.querySelectorAll('[data-lang]').forEach((element) => {
+        element.hidden = element.dataset.lang !== lang;
+      });
+
+      document.querySelectorAll('[data-lang-toggle]').forEach((link) => {
+        const active = link.dataset.langToggle === lang;
+        link.classList.toggle('button--secondary', active);
+        link.classList.toggle('button--ghost', !active);
+        link.setAttribute('aria-pressed', active ? 'true' : 'false');
+      });
+    })();
+  </script>
 </body>
 </html>

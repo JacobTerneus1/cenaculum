@@ -1,11 +1,104 @@
 ---
 layout: default
+title: Family of Saint Jerome
 ---
 
-# Family of Saint Jerome
+<section class="section">
+  <div class="container center">
+    <div data-lang="eng">
+      <div class="eyebrow">About the community</div>
+      <h1>Family of Saint Jerome</h1>
+      <p class="lede">The community that supports Cenaculum and related apostolates of prayer, Latin liturgy, hospitality, and friendship.</p>
+      <div class="hero__actions">
+        <a class="button" href="{{ '/' | relative_url }}">Back to Cenaculum</a>
+      </div>
+    </div>
 
-## What is the Family of Saint Jerome
+    <div data-lang="lat" hidden>
+      <div class="eyebrow">De communitate</div>
+      <h1>Familia Sancti Hieronymi</h1>
+      <p class="lede">Communitas quae Cenaculum atque alia apostolata precationis, liturgiae Latinae, hospitalitatis, et amicitiae sustinet.</p>
+      <div class="hero__actions">
+        <a class="button" href="{{ '/' | relative_url }}">Ad Cenaculum redi</a>
+      </div>
+    </div>
+  </div>
+</section>
 
-## History of the Family of Saint Jerome
+<section class="section section--soft">
+  <div class="container">
+    <div data-lang="eng">
+      <div class="section__header">
+        <div class="eyebrow">What it is</div>
+        <h2>What the Family is for</h2>
+      </div>
 
+      <div class="card-grid">
+        <div class="card">
+          <h3>Prayer and formation</h3>
+          <p>The Family of Saint Jerome exists to help Catholics live the faith more deeply, with a particular love for Latin prayer, the liturgy, and faithful formation.</p>
+        </div>
 
+        <div class="card">
+          <h3>Hospitality</h3>
+          <p>Cenaculum is one of the chief ways this life is made visible: a place where prayer, study, meals, and conversation are shared patiently and concretely.</p>
+        </div>
+
+        <div class="card">
+          <h3>Friendship</h3>
+          <p>The community is not only about events. It is also about friendship that continues before and after Cenaculum, across years and places.</p>
+        </div>
+      </div>
+    </div>
+
+    <div data-lang="lat" hidden>
+      <div class="section__header">
+        <div class="eyebrow">Quid sit</div>
+        <h2>Cui rei Familia sit</h2>
+      </div>
+
+      <div class="card-grid">
+        <div class="card">
+          <h3>Precatio et formatio</h3>
+          <p>Familia Sancti Hieronymi instituta est ut fideles ad vitam christianam altius ducendam adiuvet, cum peculiari amore erga precationem Latinam, liturgiam, atque formationem fidelem.</p>
+        </div>
+
+        <div class="card">
+          <h3>Hospitalitas</h3>
+          <p>Cenaculum una ex praecipuis viis est quibus haec vita conspicua fit: locus ubi precatio, studium, cibus, atque sermo patienter et concrete communicantur.</p>
+        </div>
+
+        <div class="card">
+          <h3>Amicitia</h3>
+          <p>Communitas non solum de eventibus agit. De amicitia etiam agit, quae ante Cenaculum et post Cenaculum, per annos et per loca, perseverat.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <div data-lang="eng">
+      <div class="section__header">
+        <div class="eyebrow">History</div>
+        <h2>A brief history</h2>
+      </div>
+
+      <div class="card">
+        <p>The Family of Saint Jerome grew out of a desire to keep Latin prayer, Latin liturgy, and Catholic learning close together. Cenaculum developed as a natural expression of that vision, and the community continues to gather around it each year.</p>
+      </div>
+    </div>
+
+    <div data-lang="lat" hidden>
+      <div class="section__header">
+        <div class="eyebrow">Historia</div>
+        <h2>Brevis historia</h2>
+      </div>
+
+      <div class="card">
+        <p>Familia Sancti Hieronymi ex desiderio orta est precationem Latinam, liturgiam Latinam, atque studia catholica inter se coniungere. Cenaculum tamquam expressio naturalis huius visionis paulatim evolutum est, et communitas circa illud quotannis convenire pergit.</p>
+      </div>
+    </div>
+  </div>
+</section>

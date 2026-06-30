@@ -12,7 +12,7 @@ Website for **Cenaculum**, an immersive Latin retreat, and the **Family of Saint
 ```
 _config.yml          # Jekyll config
 _layouts/default.html # Base HTML layout that links common.css
-index.md             # Home page
+index.html           # Home page
 common.css           # All styling
 pages/
   family-saint-jerome.md   # Sub-page about the Family of Saint Jerome
@@ -20,10 +20,10 @@ pages/
 
 ## Content conventions
 
-- Jekyll only processes Markdown files that include YAML front matter.
-- `index.md` and files in `pages/` should start with `---` and `layout: default`.
+- Jekyll only processes files that include YAML front matter.
+- `index.html` and files in `pages/` should start with `---` and `layout: default`.
 - The shared layout lives in `_layouts/default.html` and links `common.css` with `relative_url`.
-- The home page lives in `index.md`. Sections are delimited by `##` headings and `---` rules.
+- The home page lives in `index.html`.
 - Sub-pages go under `pages/`.
 - All CSS is in `common.css`. Uses custom properties (colors, spacing, shadows) for consistency.
 - Responsive breakpoints at 900px and 650px.
@@ -40,7 +40,7 @@ pages/
    ---
    ```
 
-3. Add a navigation link in `index.md` if needed.
+3. Add a navigation link in `index.html` if needed.
 4. Style any new elements in `common.css` following existing patterns.
 
 ## Local development

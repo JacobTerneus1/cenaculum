@@ -1,26 +1,9 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Cenaculum</title>
-  <link rel="stylesheet" href="/common.css">
-</head>
-<body>
-  <header class="site-header">
-    <div class="container nav">
-      <a class="logo" href="/">Cenaculum</a>
-      <nav class="nav__links" aria-label="Primary">
-        <span data-lang="eng"><a href="/pages/family-saint-jerome.html">Family of Saint Jerome</a></span>
-        <span data-lang="lat" hidden><a href="/pages/family-saint-jerome.html">Familia Sancti Hieronymi</a></span>
-        <a class="button button--secondary" href="?lang=eng" data-lang-toggle="eng" aria-pressed="true" aria-label="Show English">ENG</a>
-        <a class="button button--ghost" href="?lang=lat" data-lang-toggle="lat" aria-pressed="false" aria-label="Show Latin">LAT</a>
-      </nav>
-    </div>
-  </header>
+---
+layout: default
+title: Cenaculum
+---
 
-  <main>
-    <section class="section">
+<section class="section">
   <div class="container center">
     <div data-lang="eng">
       <div class="eyebrow">Latin retreat</div>
@@ -487,32 +470,3 @@
     </div>
   </div>
 </section>
-
-  </main>
-
-  <footer class="site-footer">
-    <div class="container footer__grid">
-      <p class="muted">&copy; Jacob Terneus 2026</p>
-    </div>
-  </footer>
-
-  <script>
-    (() => {
-      const lang = new URLSearchParams(window.location.search).get('lang') === 'lat' ? 'lat' : 'eng';
-
-      document.documentElement.lang = lang === 'lat' ? 'la' : 'en';
-
-      document.querySelectorAll('[data-lang]').forEach((element) => {
-        element.hidden = element.dataset.lang !== lang;
-      });
-
-      document.querySelectorAll('[data-lang-toggle]').forEach((link) => {
-        const active = link.dataset.langToggle === lang;
-        link.classList.toggle('button--secondary', active);
-        link.classList.toggle('button--ghost', !active);
-        link.setAttribute('aria-pressed', active ? 'true' : 'false');
-      });
-    })();
-  </script>
-</body>
-</html>
