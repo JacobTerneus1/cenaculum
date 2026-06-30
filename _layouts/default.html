@@ -11,10 +11,8 @@
     <div class="container nav">
       <a class="logo" href="{{ '/' | relative_url }}">Cenaculum</a>
       <nav class="nav__links" aria-label="Primary">
-        <span data-lang="eng"><a href="{{ '/pages/family-saint-jerome.html' | relative_url }}">Family of Saint Jerome</a></span>
-        <span data-lang="lat" hidden><a href="{{ '/pages/family-saint-jerome.html' | relative_url }}">Familia Sancti Hieronymi</a></span>
-        <a class="button button--secondary" href="?lang=eng" data-lang-toggle="eng" aria-pressed="true" aria-label="Show English">ENG</a>
-        <a class="button button--ghost" href="?lang=lat" data-lang-toggle="lat" aria-pressed="false" aria-label="Show Latin">LAT</a>
+        <a class="button button--secondary lang-toggle" href="?lang=eng" data-lang-toggle="eng" aria-pressed="true" aria-label="Show English">ENG</a>
+        <a class="button button--ghost lang-toggle" href="?lang=lat" data-lang-toggle="lat" aria-pressed="false" aria-label="Show Latin">LAT</a>
       </nav>
     </div>
   </header>

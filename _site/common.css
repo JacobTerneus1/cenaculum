@@ -128,35 +128,36 @@ h3 {
 }
 
 .nav {
-  min-height: 72px;
+  min-height: 52px;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: 24px;
+  gap: 12px;
 }
 
 .logo {
   color: var(--text);
   font-weight: 900;
-  font-size: 1.1rem;
+  font-size: 1rem;
   text-decoration: none;
 }
 
 .nav__links {
   display: flex;
   align-items: center;
-  gap: 20px;
-  flex-wrap: wrap;
+  gap: 6px;
+  flex-wrap: nowrap;
+  margin-left: auto;
 }
 
-.nav__links a {
+.nav__links a:not(.button) {
   color: var(--text);
-  font-size: 0.95rem;
+  font-size: 0.9rem;
   font-weight: 700;
   text-decoration: none;
 }
 
-.nav__links a:hover {
+.nav__links a:not(.button):hover {
   color: var(--accent);
 }
 
@@ -202,6 +203,13 @@ button:hover {
 .button--ghost:hover {
   background: var(--bg-soft);
   color: var(--text);
+}
+
+.lang-toggle {
+  min-height: 28px;
+  padding: 0 10px;
+  font-size: 0.72rem;
+  letter-spacing: 0.03em;
 }
 
 /* ---------- Hero ---------- */
@@ -527,13 +535,13 @@ button:hover {
 
 @media (max-width: 650px) {
   .nav {
-    align-items: flex-start;
-    flex-direction: column;
-    padding: 16px 0;
+    align-items: center;
+    flex-direction: row;
+    padding: 12px 0;
   }
 
   .nav__links {
-    gap: 12px;
+    gap: 6px;
   }
 
   .section {
