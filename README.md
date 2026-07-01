@@ -5,9 +5,7 @@ Website for the **Cenaculum**, which is an immersive, Catholic, Latin retreat/co
 ## Tech
 
 - **Jekyll** site deployed on **GitHub Pages** with a custom domain: cenaculumlatinum.org
-- All content is currently styled with a single CSS file: common.css
 - `_site/` is generated output from Jekyll. Edit the source files, not the built copies.
-- The majority of the content lives on the homepage, organized with anchor links to sections: index.html
 
 ## Structure
 
@@ -22,6 +20,7 @@ pages/
   family-saint-jerome.md # Family of Saint Jerome sub-page
 _site/                   # Generated site output; ignored in git and rebuilt automatically
 ```
+
 
 ## Content conventions
 
@@ -42,6 +41,7 @@ _site/                   # Generated site output; ignored in git and rebuilt aut
 1. Create a .md or .html file in `pages/` or at the root.
 2. Add front matter at the top:
 
+
    ```yaml
    ---
    layout: default
@@ -49,7 +49,7 @@ _site/                   # Generated site output; ignored in git and rebuilt aut
    ```
 
 3. Add a navigation link in `index.html` if needed.
-4. Style any new elements in `common.css` following existing patterns.
+4. Style any new elements in `common.css` following existing patterns. Prefer to use existing classes instead of creating new ones.  Prefer simple, understandable, minimal css over fancy and overbuilt.
 5. If the page is bilingual, add matching English and Latin `data-lang` blocks.
 
 ## Local development
@@ -69,8 +69,3 @@ jekyll serve
 
 GitHub Pages publishes from the `main` branch and runs its own Jekyll build. Commit the source files; do not commit `_site/`.
 
-## Missing but useful context
-
-- The site's custom domain is defined in `CNAME`.
-- There is no separate JavaScript file; the only client-side behavior is the inline language-toggle script in `_layouts/default.html`.
-- Most edits will be in `index.html`, `pages/family-saint-jerome.md`, `common.css`, or `_layouts/default.html`.
