@@ -1,50 +1,69 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>{{ page.title | default: 'Cenaculum' }}</title>
-  <link rel="icon" href="{{ '/favicon.ico' | relative_url }}" type="image/x-icon">
-  <link rel="stylesheet" href="{{ '/common.css' | relative_url }}">
-</head>
-<body>
-  <header class="site-header">
-    <div class="container nav">
-      <a class="logo" href="{{ '/' | relative_url }}">Cenaculum</a>
-      <nav class="nav__links" aria-label="Primary">
-        <a class="button button--secondary lang-toggle" href="?lang=eng" data-lang-toggle="eng" aria-pressed="true" aria-label="Show English">ENG</a>
-        <a class="button button--ghost lang-toggle" href="?lang=lat" data-lang-toggle="lat" aria-pressed="false" aria-label="Show Latin">LAT</a>
-      </nav>
-    </div>
-  </header>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>{{ page.title | default: 'Cenaculum' }}</title>
+    <link
+      rel="icon"
+      href="{{ '/favicon.ico' | relative_url }}"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="{{ '/common.css' | relative_url }}" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container nav">
+        <a class="logo" href="{{ '/' | relative_url }}">CENACULUM</a>
+        <nav class="nav__links" aria-label="Primary">
+          <a
+            class="button button--secondary lang-toggle"
+            href="?lang=eng"
+            data-lang-toggle="eng"
+            aria-pressed="true"
+            aria-label="Show English"
+            >ENG</a
+          >
+          <a
+            class="button button--ghost lang-toggle"
+            href="?lang=lat"
+            data-lang-toggle="lat"
+            aria-pressed="false"
+            aria-label="Show Latin"
+            >LAT</a
+          >
+        </nav>
+      </div>
+    </header>
 
-  <main>
-    {{ content }}
-  </main>
+    <main>{{ content }}</main>
 
-  <footer class="site-footer">
-    <div class="container footer__grid">
-      <p class="muted">&copy; Familia Sancti Hieronimi 2026</p>
-    </div>
-  </footer>
+    <footer class="site-footer">
+      <div class="container footer__grid">
+        <p class="muted">&copy; Familia Sancti Hieronimi 2026</p>
+      </div>
+    </footer>
 
-  <script>
-    (() => {
-      const lang = new URLSearchParams(window.location.search).get('lang') === 'lat' ? 'lat' : 'eng';
+    <script>
+      (() => {
+        const lang =
+          new URLSearchParams(window.location.search).get("lang") === "lat"
+            ? "lat"
+            : "eng";
 
-      document.documentElement.lang = lang === 'lat' ? 'la' : 'en';
+        document.documentElement.lang = lang === "lat" ? "la" : "en";
 
-      document.querySelectorAll('[data-lang]').forEach((element) => {
-        element.hidden = element.dataset.lang !== lang;
-      });
+        document.querySelectorAll("[data-lang]").forEach((element) => {
+          element.hidden = element.dataset.lang !== lang;
+        });
 
-      document.querySelectorAll('[data-lang-toggle]').forEach((link) => {
-        const active = link.dataset.langToggle === lang;
-        link.classList.toggle('button--secondary', active);
-        link.classList.toggle('button--ghost', !active);
-        link.setAttribute('aria-pressed', active ? 'true' : 'false');
-      });
-    })();
-  </script>
-</body>
+        document.querySelectorAll("[data-lang-toggle]").forEach((link) => {
+          const active = link.dataset.langToggle === lang;
+          link.classList.toggle("button--secondary", active);
+          link.classList.toggle("button--ghost", !active);
+          link.setAttribute("aria-pressed", active ? "true" : "false");
+        });
+      })();
+    </script>
+  </body>
 </html>
