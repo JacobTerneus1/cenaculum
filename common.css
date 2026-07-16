@@ -499,6 +499,33 @@ button:hover {
   color: var(--muted);
 }
 
+.document-shell {
+  max-width: 900px;
+  margin-inline: auto;
+}
+
+.document-meta {
+  margin-bottom: 20px;
+}
+
+.document-summary {
+  max-width: 760px;
+}
+
+.document-pre {
+  margin: 0;
+  padding: 24px;
+  overflow-x: auto;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+  background: var(--bg-soft);
+  color: var(--text);
+  font-family: "Georgia", "Times New Roman", serif;
+  font-size: 1rem;
+  line-height: 1.75;
+  white-space: pre-wrap;
+}
+
 .rounded {
   border-radius: var(--radius);
 }
