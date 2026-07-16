@@ -8,7 +8,7 @@ title: Family of Saint Jerome
     <div data-lang="eng">
       <div class="eyebrow">About the community</div>
       <h1>Family of Saint Jerome</h1>
-      <p class="lede">The community that supports Cenaculum and related apostolates of prayer, Latin liturgy, hospitality, and friendship.</p>
+      <p class="lede">The Family of Saint Jerome is the Catholic association behind Cenaculum: a community devoted to fidelity to the Holy Father, deep spiritual life, and the living use of Latin in the Church.</p>
       <div class="hero__actions">
         <a class="button" href="{{ '/' | relative_url }}">Back to Cenaculum</a>
       </div>
@@ -17,7 +17,7 @@ title: Family of Saint Jerome
     <div data-lang="lat" hidden>
       <div class="eyebrow">De communitate</div>
       <h1>Familia Sancti Hieronymi</h1>
-      <p class="lede">Communitas quae Cenaculum atque alia apostolata precationis, liturgiae Latinae, hospitalitatis, et amicitiae sustinet.</p>
+      <p class="lede">Familia Sancti Hieronymi est consociatio Catholica ex qua Cenaculum oritur: communitas quae sincero amore erga Summum Pontificem, altiore vita spirituali, atque vivo usu linguae Latinae in Ecclesia distinguitur.</p>
       <div class="hero__actions">
         <a class="button" href="{{ '/' | relative_url }}">Ad Cenaculum redi</a>
       </div>
@@ -29,48 +29,48 @@ title: Family of Saint Jerome
   <div class="container">
     <div data-lang="eng">
       <div class="section__header">
-        <div class="eyebrow">What it is</div>
-        <h2>What the Family is for</h2>
+        <div class="eyebrow">Purpose</div>
+        <h2>The Family's threefold aim</h2>
       </div>
 
       <div class="card-grid">
         <div class="card">
-          <h3>Prayer and formation</h3>
-          <p>The Family of Saint Jerome exists to help Catholics live the faith more deeply, with a particular love for Latin prayer, the liturgy, and faithful formation.</p>
+          <h3>Fidelity to the Holy Father</h3>
+          <p>Its members profess sincere love for the Holy Father and filial obedience to the Church's magisterium.</p>
         </div>
 
         <div class="card">
-          <h3>Hospitality</h3>
-          <p>Cenaculum is one of the chief ways this life is made visible: a place where prayer, study, meals, and conversation are shared patiently and concretely.</p>
+          <h3>Spiritual life</h3>
+          <p>The Family seeks a spiritual life that leads to intimate union with God, following the teaching and example of the saints.</p>
         </div>
 
         <div class="card">
-          <h3>Friendship</h3>
-          <p>The community is not only about events. It is also about friendship that continues before and after Cenaculum, across years and places.</p>
+          <h3>Living Latin</h3>
+          <p>Members gradually learn to read, speak, write, and pray in Latin, the Church's living language, through steady daily practice.</p>
         </div>
       </div>
     </div>
 
     <div data-lang="lat" hidden>
       <div class="section__header">
-        <div class="eyebrow">Quid sit</div>
-        <h2>Cui rei Familia sit</h2>
+        <div class="eyebrow">Finis</div>
+        <h2>Triplex Familiae propositum</h2>
       </div>
 
       <div class="card-grid">
         <div class="card">
-          <h3>Precatio et formatio</h3>
-          <p>Familia Sancti Hieronymi instituta est ut fideles ad vitam christianam altius ducendam adiuvet, cum peculiari amore erga precationem Latinam, liturgiam, atque formationem fidelem.</p>
+          <h3>Amor erga Summum Pontificem</h3>
+          <p>Membra eius sincerum amorem erga Summum Pontificem et filialem oboedientiam erga Ecclesiae magisterium profitentur.</p>
         </div>
 
         <div class="card">
-          <h3>Hospitalitas</h3>
-          <p>Cenaculum una ex praecipuis viis est quibus haec vita conspicua fit: locus ubi precatio, studium, cibus, atque sermo patienter et concrete communicantur.</p>
+          <h3>Vita spiritualis</h3>
+          <p>Familia vitam spiritualem colere studet quae ad intimam cum Deo unionem conducit, secundum doctrinam et exempla Sanctorum.</p>
         </div>
 
         <div class="card">
-          <h3>Amicitia</h3>
-          <p>Communitas non solum de eventibus agit. De amicitia etiam agit, quae ante Cenaculum et post Cenaculum, per annos et per loca, perseverat.</p>
+          <h3>Lingua Latina viva</h3>
+          <p>Membra paulatim discunt Latine legere, loqui, scribere, et orare, linguam Ecclesiae cotidianis exercitiis fideliter excolentes.</p>
         </div>
       </div>
     </div>
@@ -81,23 +81,77 @@ title: Family of Saint Jerome
   <div class="container">
     <div data-lang="eng">
       <div class="section__header">
+        <div class="eyebrow">Life</div>
+        <h2>How the Family lives</h2>
+      </div>
+
+      <div class="card-grid">
+        <div class="card">
+          <h3>Prayer and formation</h3>
+          <p>The constitution recommends frequent Mass, Holy Communion, confession, lectio divina, mental prayer, the Rosary, and, when possible, the Liturgy of the Hours.</p>
+        </div>
+
+        <div class="card">
+          <h3>Cenacula</h3>
+          <p>The Family is organized in local communities called <em>cenacula</em>, where members gather to pray together in Latin and speak with one another in Latin.</p>
+        </div>
+
+        <div class="card">
+          <h3>Wide membership</h3>
+          <p>The constitution presents the Family as open to Catholic men and women of different ages, conditions of life, and nations, with room for both local and distant members.</p>
+        </div>
+      </div>
+    </div>
+
+    <div data-lang="lat" hidden>
+      <div class="section__header">
+        <div class="eyebrow">Vita</div>
+        <h2>Quomodo Familia vivat</h2>
+      </div>
+
+      <div class="card-grid">
+        <div class="card">
+          <h3>Precatio et formatio</h3>
+          <p>Constitutio enixe commendat sanctae Missae sacrificium, sacram Communionem, confessionem, lectionem divinam, orationem mentalem, Rosarium Marianum, atque, quantum fieri potest, Liturgiam Horarum.</p>
+        </div>
+
+        <div class="card">
+          <h3>Cenacula</h3>
+          <p>Familia in communitates locales disponitur quae <em>cenacula</em> appellantur, ubi membra in communi Latine orant et inter se Latine colloquuntur.</p>
+        </div>
+
+        <div class="card">
+          <h3>Membra varia</h3>
+          <p>Constitutio Familiam proponit omnibus fidei Catholicae hominibus apertam, utriusque sexus, omnis aetatis et nationis, sive prope sive longe degant.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section section--soft">
+  <div class="container">
+    <div data-lang="eng">
+      <div class="section__header">
         <div class="eyebrow">History</div>
-        <h2>A brief history</h2>
+        <h2>Foundation and approval</h2>
       </div>
 
       <div class="card">
-        <p>The Family of Saint Jerome grew out of a desire to keep Latin prayer, Latin liturgy, and Catholic learning close together. Cenaculum developed as a natural expression of that vision, and the community continues to gather around it each year.</p>
+        <p>The constitution states that the Family of Saint Jerome was founded on 16 July 1989 under the patronage of Saint Jerome, chosen as spiritual father for his devotion to the Roman Pontiff, his defense of the Catholic faith, his mastery in explaining Sacred Scripture, his guidance in the spiritual life, and his rich contribution to ecclesiastical Latin.</p>
+        <p>An English page from the Andreas archive describes the Family as a canonical association founded and approved according to canon 322. The constitution further notes approval by Bishop John C. Favalora on 5 December 1990.</p>
       </div>
     </div>
 
     <div data-lang="lat" hidden>
       <div class="section__header">
         <div class="eyebrow">Historia</div>
-        <h2>Brevis historia</h2>
+        <h2>Origo et approbatio</h2>
       </div>
 
       <div class="card">
-        <p>Familia Sancti Hieronymi ex desiderio orta est precationem Latinam, liturgiam Latinam, atque studia catholica inter se coniungere. Cenaculum tamquam expressio naturalis huius visionis paulatim evolutum est, et communitas circa illud quotannis convenire pergit.</p>
+        <p>Constitutio testatur Familiam Sancti Hieronymi die 16 mensis Iulii anno 1989 conditam esse sub patrocinio Sancti Hieronymi, quem patronum ac patrem spiritualem elegerunt propter sincerissimam devotionem erga Summum Pontificem, propugnationem fidei Catholicae, eximiam Sacrae Scripturae expositionem, praeclarum vitae spiritualis magistrum, atque copiosam Latinitatem ecclesiasticam.</p>
+        <p>Pagina Anglica ex tabulario Andreae Familiam describit ut consociationem canonicam secundum canonem 322 conditam et approbatam. Ipsa constitutio addit approbationem ab Episcopo Ioanne C. Favalora die 5 Decembris 1990 datam esse.</p>
       </div>
     </div>
   </div>
