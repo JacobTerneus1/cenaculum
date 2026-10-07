@@ -235,6 +235,14 @@ h3 {
   gap: 42px;
 }
 
+/* ---------- Images ---------- */
+
+.content-image,
+.split img {
+  width: 100%;
+  border-radius: var(--radius);
+}
+
 /* ---------- Schedule ---------- */
 
 .schedule {
