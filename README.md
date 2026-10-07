@@ -16,8 +16,9 @@ CNAME                    # Custom domain for GitHub Pages
 index.html               # Main homepage with most site content
 common.css               # Shared site styling
 favicon.ico              # Site favicon
+assets/images/           # Source images used by pages
 pages/
-  family-saint-jerome.md # Family of Saint Jerome sub-page
+  family-saint-jerome.html # Family of Saint Jerome sub-page
 _site/                   # Generated site output; ignored in git and rebuilt automatically
 ```
 
@@ -35,6 +36,31 @@ _site/                   # Generated site output; ignored in git and rebuilt aut
 - Responsive breakpoints at 900px and 650px.
 - Icons are rendered as plain unicode/emoji text (no icon library).
 - Internal links and asset URLs should use Jekyll's `relative_url` filter in layouts/pages when appropriate.
+- Store images in `assets/images/`.
+- For a full-width image inside the content column, use `class="content-image"`.
+- For a half-width image/text layout, use the existing `split` class with the image as one child and the text block as the other child.
+
+Example full-width image:
+
+```html
+<img
+  class="content-image"
+  src="{{ '/assets/images/example.jpg' | relative_url }}"
+  alt="Descriptive text"
+/>
+```
+
+Example half-width image/text layout:
+
+```html
+<div class="split">
+  <img src="{{ '/assets/images/example.jpg' | relative_url }}" alt="Descriptive text" />
+  <div>
+    <h2>Heading</h2>
+    <p>Text beside the image.</p>
+  </div>
+</div>
+```
 
 ## Adding a new page
 
@@ -68,4 +94,3 @@ jekyll serve
 ## Deployment
 
 GitHub Pages publishes from the `main` branch and runs its own Jekyll build. Commit the source files; do not commit `_site/`.
-
