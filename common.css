@@ -12,8 +12,6 @@
   --max-width: 1120px;
   --radius: 18px;
   --radius-sm: 10px;
-  --shadow: 0 12px 30px rgba(0, 0, 0, 0.08);
-
   --font-main:
     system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
 }
@@ -150,21 +148,9 @@ h3 {
   margin-left: auto;
 }
 
-.nav__links a:not(.button) {
-  color: var(--text);
-  font-size: 0.9rem;
-  font-weight: 700;
-  text-decoration: none;
-}
-
-.nav__links a:not(.button):hover {
-  color: var(--accent);
-}
-
 /* ---------- Buttons ---------- */
 
-.button,
-button {
+.button {
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -180,8 +166,7 @@ button {
   cursor: pointer;
 }
 
-.button:hover,
-button:hover {
+.button:hover {
   background: var(--accent-dark);
   color: white;
 }
@@ -212,56 +197,13 @@ button:hover {
   letter-spacing: 0.03em;
 }
 
-/* ---------- Hero ---------- */
-
-.hero {
-  padding: 64px 0 80px;
-}
-
-.hero__grid {
-  display: grid;
-  grid-template-columns: 1.05fr 0.95fr;
-  align-items: center;
-  gap: 48px;
-}
-
-.hero__meta {
-  display: flex;
-  gap: 12px;
-  flex-wrap: wrap;
-  margin-bottom: 20px;
-}
-
-.pill {
-  display: inline-flex;
-  align-items: center;
-  padding: 7px 12px;
-  border: 1px solid var(--border);
-  border-radius: 999px;
-  background: var(--card);
-  color: var(--muted);
-  font-size: 0.9rem;
-  font-weight: 700;
-}
+/* ---------- Link groups ---------- */
 
 .hero__actions {
   display: flex;
   gap: 12px;
   flex-wrap: wrap;
   margin-top: 28px;
-}
-
-.hero__image {
-  overflow: hidden;
-  border-radius: var(--radius);
-  box-shadow: var(--shadow);
-  transform: rotate(1deg);
-}
-
-.hero__image img {
-  width: 100%;
-  aspect-ratio: 4 / 5;
-  object-fit: cover;
 }
 
 /* ---------- Cards ---------- */
@@ -284,18 +226,6 @@ button:hover {
   margin-bottom: 0;
 }
 
-.card__icon {
-  width: 46px;
-  height: 46px;
-  display: grid;
-  place-items: center;
-  margin-bottom: 18px;
-  border-radius: 50%;
-  background: var(--accent-soft);
-  color: var(--accent-dark);
-  font-weight: 900;
-}
-
 /* ---------- Feature split sections ---------- */
 
 .split {
@@ -305,46 +235,7 @@ button:hover {
   gap: 42px;
 }
 
-.split__image {
-  overflow: hidden;
-  border-radius: var(--radius);
-}
-
-.split__image img {
-  width: 100%;
-  aspect-ratio: 4 / 3;
-  object-fit: cover;
-}
-
-/* ---------- Photo grid ---------- */
-
-.photo-grid {
-  display: grid;
-  grid-template-columns: 1.2fr 0.8fr 0.8fr;
-  grid-auto-rows: 220px;
-  gap: 16px;
-}
-
-.photo-grid img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  border-radius: var(--radius-sm);
-}
-
-.photo-grid img:first-child {
-  grid-row: span 2;
-}
-
 /* ---------- Schedule ---------- */
-
-#schedule.section {
-  padding: 48px 0;
-}
-
-#schedule .section__header {
-  margin-bottom: 20px;
-}
 
 .schedule {
   display: grid;
@@ -375,44 +266,6 @@ button:hover {
   line-height: 1.15;
 }
 
-.schedule-item p {
-  color: var(--muted);
-  margin-bottom: 0;
-}
-
-/* ---------- Media embeds ---------- */
-
-.media-grid {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 24px;
-}
-
-.media-card {
-  overflow: hidden;
-  border: 1px solid var(--border);
-  border-radius: var(--radius);
-  background: var(--card);
-}
-
-.media-card__body {
-  padding: 18px;
-}
-
-.video-wrapper {
-  position: relative;
-  height: 0;
-  padding-bottom: 56.25%;
-  background: #111;
-}
-
-.video-wrapper iframe {
-  position: absolute;
-  inset: 0;
-  width: 100%;
-  height: 100%;
-}
-
 /* ---------- FAQ ---------- */
 
 .faq {
@@ -437,26 +290,6 @@ button:hover {
   color: var(--muted);
 }
 
-/* ---------- CTA band ---------- */
-
-.cta {
-  padding: 56px;
-  border-radius: calc(var(--radius) + 10px);
-  background: var(--text);
-  color: white;
-  text-align: center;
-}
-
-.cta h2 {
-  color: white;
-}
-
-.cta p {
-  max-width: 640px;
-  margin-inline: auto;
-  color: rgba(255, 255, 255, 0.78);
-}
-
 /* ---------- Footer ---------- */
 
 .site-footer {
@@ -471,22 +304,6 @@ button:hover {
   gap: 24px;
   flex-wrap: wrap;
   text-align: center;
-}
-
-.footer__links {
-  display: flex;
-  gap: 18px;
-  flex-wrap: wrap;
-}
-
-.footer__links a {
-  color: var(--muted);
-  font-weight: 700;
-  text-decoration: none;
-}
-
-.footer__links a:hover {
-  color: var(--accent);
 }
 
 /* ---------- Utility classes ---------- */
@@ -504,14 +321,6 @@ button:hover {
   margin-inline: auto;
 }
 
-.document-meta {
-  margin-bottom: 20px;
-}
-
-.document-summary {
-  max-width: 760px;
-}
-
 .document-pre {
   margin: 0;
   padding: 24px;
@@ -526,14 +335,6 @@ button:hover {
   white-space: pre-wrap;
 }
 
-.rounded {
-  border-radius: var(--radius);
-}
-
-.shadow {
-  box-shadow: var(--shadow);
-}
-
 /* ---------- Responsive ---------- */
 
 @media (max-width: 900px) {
@@ -541,45 +342,18 @@ button:hover {
     font-size: 17px;
   }
 
-  .hero__grid,
   .split {
     grid-template-columns: 1fr;
   }
 
-  .hero__image {
-    transform: none;
-  }
-
-  .card-grid,
-  .media-grid {
+  .card-grid {
     grid-template-columns: 1fr 1fr;
-  }
-
-  .speaker-grid {
-    grid-template-columns: 1fr 1fr;
-  }
-
-  .photo-grid {
-    grid-template-columns: 1fr 1fr;
-  }
-
-  .photo-grid img:first-child {
-    grid-column: span 2;
-    grid-row: span 1;
   }
 
   .schedule-item {
     grid-template-columns: 112px 1fr;
     gap: 10px;
     padding: 9px 12px;
-  }
-
-  #schedule.section {
-    padding: 40px 0;
-  }
-
-  #schedule .section__header {
-    margin-bottom: 16px;
   }
 }
 
@@ -598,29 +372,7 @@ button:hover {
     padding: 52px 0;
   }
 
-  .hero {
-    padding: 40px 0 56px;
-  }
-
-  .card-grid,
-  .media-grid,
-  .speaker-grid,
-  .photo-grid {
+  .card-grid {
     grid-template-columns: 1fr;
-  }
-
-  .photo-grid {
-    grid-auto-rows: auto;
-  }
-
-  .photo-grid img,
-  .photo-grid img:first-child {
-    grid-column: auto;
-    grid-row: auto;
-    aspect-ratio: 4 / 3;
-  }
-
-  .cta {
-    padding: 36px 22px;
   }
 }
