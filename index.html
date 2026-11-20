@@ -3,100 +3,140 @@ layout: default
 title: CENACULUM
 ---
 
-<section class="section">
-  <div class="container center">
-    <div data-lang="eng">
-      <div class="eyebrow">Family of Saint Jerome</div>
-      <h1>CENACULUM</h1>
-      <p class="lede">A Catholic, immersive Latin retreat.</p>
-      <div class="hero__actions">
-        <a class="button button--ghost" href="#register">Register</a>
-        <a class="button button--ghost" href="#about">What it's like</a>
-        <a class="button button--ghost" href="#familia"
-          >Family of Saint Jerome</a
-        >
-        <a class="button button--ghost" href="#past-years">Past Years</a>
-        <a class="button button--ghost" href="#newbies">For Newbies</a>
-        <a class="button button--ghost" href="#faq">FAQ</a>
-        <a class="button button--ghost" href="#contact">Contact</a>
+<section class="section hero-section">
+  <div class="container hero">
+    <div class="hero__copy">
+      <div data-lang="eng">
+        <div class="eyebrow">Family of Saint Jerome</div>
+        <h1>CENACULUM</h1>
+        <p class="lede">A Catholic, immersive Latin retreat.</p>
+        <div class="hero__actions">
+          <a class="button button--ghost" href="#register">Register</a>
+          <a class="button button--ghost" href="#about">What it's like</a>
+          <a class="button button--ghost" href="#familia"
+            >Family of Saint Jerome</a
+          >
+          <a class="button button--ghost" href="#past-years">Past Years</a>
+          <a class="button button--ghost" href="#newbies">For Newbies</a>
+          <a class="button button--ghost" href="#faq">FAQ</a>
+          <a class="button button--ghost" href="#contact">Contact</a>
+        </div>
+      </div>
+
+      <div data-lang="lat" hidden>
+        <div class="eyebrow">Familia Sancti Hieronimi</div>
+        <h1>CENACULUM</h1>
+        <p class="lede">Recessus Latinus atque Catholicus.</p>
+        <div class="hero__actions">
+          <a class="button button--ghost" href="#register">Inscriptionem Da</a>
+          <a class="button button--ghost" href="#about">Quid sit</a>
+          <a class="button button--ghost" href="#familia"
+            >Familia Sancti Hieronimi</a
+          >
+          <a class="button button--ghost" href="#past-years">Anni Praeteriti</a>
+          <a class="button button--ghost" href="#newbies">Tirones</a>
+          <a class="button button--ghost" href="#faq">Quaestiones</a>
+          <a class="button button--ghost" href="#contact">Roga Nos</a>
+        </div>
       </div>
     </div>
 
-    <div data-lang="lat" hidden>
-      <div class="eyebrow">Familia Sancti Hieronimi</div>
-      <h1>CENACULUM</h1>
-      <p class="lede">Recessus Latinus atque Catholicus.</p>
-      <div class="hero__actions">
-        <a class="button button--ghost" href="#register">Inscriptionem Da</a>
-        <a class="button button--ghost" href="#about">Quid sit</a>
-        <a class="button button--ghost" href="#familia"
-          >Familia Sancti Hieronimi</a
-        >
-        <a class="button button--ghost" href="#past-years">Anni Praeteriti</a>
-        <a class="button button--ghost" href="#newbies">Tirones</a>
-        <a class="button button--ghost" href="#faq">Quaestiones</a>
-        <a class="button button--ghost" href="#contact">Roga Nos</a>
-      </div>
+    <div class="hero__photos" aria-label="Friends at Cenaculum">
+      <img
+        class="hero__photo hero__photo--main"
+        src="{{ '/assets/images/home/friends-hero.webp' | relative_url }}"
+        alt="Five Cenaculum friends sitting together and smiling"
+        width="1800"
+        height="1350"
+        fetchpriority="high"
+      />
+      <img
+        class="hero__photo hero__photo--accent"
+        src="{{ '/assets/images/home/conversation-hero.webp' | relative_url }}"
+        alt="Friends laughing together outdoors at Cenaculum"
+        width="1800"
+        height="1200"
+      />
     </div>
   </div>
 </section>
 
 <section id="future" class="section section--soft">
-  <div class="container">
-    <div data-lang="eng">
-      <div class="card center">
-        <h2>Cenaculum 2027</h2>
-        <p class="lede">June 14-19, 2027</p>
-        <p>In Burlington, WI</p>
+  <div class="container future-layout">
+    <div>
+      <div data-lang="eng">
+        <div class="card center">
+          <h2>Cenaculum 2027</h2>
+          <p class="lede">June 14-19, 2027</p>
+          <p>In Burlington, WI</p>
+        </div>
       </div>
-    </div>
 
-    <div data-lang="lat" hidden>
-      <div class="card center">
-        <h2>Cenaculum 2027</h2>
-        <p class="lede">diebus XIV-XIX Iunii MMXXVII.</p>
+      <div data-lang="lat" hidden>
+        <div class="card center">
+          <h2>Cenaculum 2027</h2>
+          <p class="lede">diebus XIV-XIX Iunii MMXXVII.</p>
+        </div>
       </div>
     </div>
+    <img
+      class="feature-photo"
+      src="{{ '/assets/images/home/group-at-church.webp' | relative_url }}"
+      alt="Cenaculum participants gathered on the church steps"
+      width="1800"
+      height="1350"
+      loading="lazy"
+    />
   </div>
 </section>
 
 <section id="register" class="section">
-  <div class="container">
-    <div data-lang="eng">
-      <div class="section__header">
-        <div class="eyebrow">Register</div>
-        <h2>Ready to join us?</h2>
+  <div class="container feature-with-photo">
+    <div>
+      <div data-lang="eng">
+        <div class="section__header">
+          <div class="eyebrow">Register</div>
+          <h2>Ready to join us?</h2>
+        </div>
+
+        <div class="card">
+          <p>
+            Registration for Cenaculum 2027 is now open.
+            <a
+              href="https://shrcburlington.stellarwebsystems.com/join?euuid=23b3bc2a-dc6c-11f1-8cb2-16ffd6e64aa1"
+              target="_blank"
+              >Sign up here</a
+            >
+          </p>
+        </div>
       </div>
 
-      <div class="card">
-        <p>
-          Registration for Cenaculum 2027 is now open.
-          <a
-            href="https://shrcburlington.stellarwebsystems.com/join?euuid=23b3bc2a-dc6c-11f1-8cb2-16ffd6e64aa1"
-            target="_blank"
-            >Sign up here</a
-          >
-        </p>
+      <div data-lang="lat" hidden>
+        <div class="section__header">
+          <div class="eyebrow">Inscriptio</div>
+          <h2>Paratus esne nobis interesse?</h2>
+        </div>
+
+        <div class="card">
+          <p>
+            Inscriptio ad Cenaculum 2027 nunc aperta est.
+            <a
+              href="https://shrcburlington.stellarwebsystems.com/join?euuid=23b3bc2a-dc6c-11f1-8cb2-16ffd6e64aa1"
+              target="_blank"
+              >Hic inscriptionem da.</a
+            >
+          </p>
+        </div>
       </div>
     </div>
-
-    <div data-lang="lat" hidden>
-      <div class="section__header">
-        <div class="eyebrow">Inscriptio</div>
-        <h2>Paratus esne nobis interesse?</h2>
-      </div>
-
-      <div class="card">
-        <p>
-          Inscriptio ad Cenaculum 2027 nunc aperta est.
-          <a
-            href="https://shrcburlington.stellarwebsystems.com/join?euuid=23b3bc2a-dc6c-11f1-8cb2-16ffd6e64aa1"
-            target="_blank"
-            >Hic inscriptionem da.</a
-          >
-        </p>
-      </div>
-    </div>
+    <img
+      class="feature-photo"
+      src="{{ '/assets/images/home/shared-table.webp' | relative_url }}"
+      alt="Cenaculum participants enjoying a meal around a shared table"
+      width="1800"
+      height="1200"
+      loading="lazy"
+    />
   </div>
 </section>
 
@@ -138,6 +178,37 @@ title: CENACULUM
         </p>
       </div>
 
+    </div>
+
+    <div class="photo-story photo-story--about" aria-label="Life at Cenaculum">
+      <img
+        src="{{ '/assets/images/home/coffee-conversation.webp' | relative_url }}"
+        alt="Three friends talking over coffee"
+        width="1800"
+        height="1441"
+        loading="lazy"
+      />
+      <img
+        src="{{ '/assets/images/home/latin-game.webp' | relative_url }}"
+        alt="Two Cenaculum participants laughing during an activity at the board"
+        width="1800"
+        height="1200"
+        loading="lazy"
+      />
+      <img
+        src="{{ '/assets/images/home/volleyball.webp' | relative_url }}"
+        alt="Cenaculum participants playing volleyball outdoors"
+        width="1800"
+        height="1200"
+        loading="lazy"
+      />
+      <img
+        src="{{ '/assets/images/home/card-game.webp' | relative_url }}"
+        alt="A Latin card game set out for a group to play"
+        width="1800"
+        height="1350"
+        loading="lazy"
+      />
     </div>
 
     <div data-lang="eng">
@@ -381,48 +452,96 @@ title: CENACULUM
         </div>
       </div>
     </div>
+
+    <div class="photo-story photo-story--day" aria-label="A day at Cenaculum">
+      <img
+        src="{{ '/assets/images/home/chapel-liturgy.webp' | relative_url }}"
+        alt="The morning liturgy in the retreat center chapel"
+        width="1800"
+        height="1350"
+        loading="lazy"
+      />
+      <img
+        src="{{ '/assets/images/home/conference-talk.webp' | relative_url }}"
+        alt="A conference talk presented in Latin"
+        width="1800"
+        height="1350"
+        loading="lazy"
+      />
+      <img
+        src="{{ '/assets/images/home/latin-discussion.webp' | relative_url }}"
+        alt="Participants listening and responding during a Latin discussion"
+        width="1800"
+        height="1350"
+        loading="lazy"
+      />
+      <img
+        src="{{ '/assets/images/home/sacred-music.webp' | relative_url }}"
+        alt="Participants singing sacred music together"
+        width="1800"
+        height="1350"
+        loading="lazy"
+      />
+      <img
+        src="{{ '/assets/images/home/evening-walk.webp' | relative_url }}"
+        alt="Cenaculum participants walking together across the grounds"
+        width="1728"
+        height="1152"
+        loading="lazy"
+      />
+    </div>
   </div>
 </section>
 
 <section id="familia" class="section section--soft">
-  <div class="container">
-    <div data-lang="eng">
-      <div class="section__header">
-        <div class="eyebrow">Family of Saint Jerome</div>
-        <h2>Family of Saint Jerome</h2>
+  <div class="container feature-with-photo feature-with-photo--reverse">
+    <div>
+      <div data-lang="eng">
+        <div class="section__header">
+          <div class="eyebrow">Family of Saint Jerome</div>
+          <h2>Family of Saint Jerome</h2>
+        </div>
+
+        <div class="card">
+          <p>
+            The Family of Saint Jerome is the Catholic association behind
+            Cenaculum, devoted to love for the Holy Father, a deep spiritual life
+            shaped by the saints, and the living use of Latin in prayer, study,
+            and friendship.
+            <a href="{{ '/family-saint-jerome/' | relative_url }}"
+              >Learn more about the Family of Saint Jerome.</a
+            >
+          </p>
+        </div>
       </div>
 
-      <div class="card">
-        <p>
-          The Family of Saint Jerome is the Catholic association behind
-          Cenaculum, devoted to love for the Holy Father, a deep spiritual life
-          shaped by the saints, and the living use of Latin in prayer, study,
-          and friendship.
-          <a href="{{ '/family-saint-jerome/' | relative_url }}"
-            >Learn more about the Family of Saint Jerome.</a
-          >
-        </p>
+      <div data-lang="lat" hidden>
+        <div class="section__header">
+          <div class="eyebrow">Familia Sancti Hieronimi</div>
+          <h2>Familia Sancti Hieronimi</h2>
+        </div>
+
+        <div class="card">
+          <p>
+            Familia Sancti Hieronimi est consociatio Catholica ex qua Cenaculum
+            oritur, quae amore erga Summum Pontificem, vita spirituali secundum
+            Sanctos formata, atque vivo usu linguae Latinae in oratione, studio,
+            et amicitia distinguitur.
+            <a href="{{ '/family-saint-jerome/' | relative_url }}"
+              >Plura de Familia Sancti Hieronimi lege.</a
+            >
+          </p>
+        </div>
       </div>
     </div>
-
-    <div data-lang="lat" hidden>
-      <div class="section__header">
-        <div class="eyebrow">Familia Sancti Hieronimi</div>
-        <h2>Familia Sancti Hieronimi</h2>
-      </div>
-
-      <div class="card">
-        <p>
-          Familia Sancti Hieronimi est consociatio Catholica ex qua Cenaculum
-          oritur, quae amore erga Summum Pontificem, vita spirituali secundum
-          Sanctos formata, atque vivo usu linguae Latinae in oratione, studio,
-          et amicitia distinguitur.
-          <a href="{{ '/family-saint-jerome/' | relative_url }}"
-            >Plura de Familia Sancti Hieronimi lege.</a
-          >
-        </p>
-      </div>
-    </div>
+    <img
+      class="feature-photo"
+      src="{{ '/assets/images/home/friendship.webp' | relative_url }}"
+      alt="Friends from the Family of Saint Jerome sharing a laugh"
+      width="1800"
+      height="1200"
+      loading="lazy"
+    />
   </div>
 </section>
 
@@ -449,32 +568,66 @@ title: CENACULUM
         <p>Hic ponetur textus de annis praeteritis.</p>
       </div>
     </div>
+
+    <div class="photo-story photo-story--past" aria-label="Cenaculum through the years">
+      <img
+        src="{{ '/assets/images/home/music-night.webp' | relative_url }}"
+        alt="A priest playing guitar during evening recreation"
+        width="1200"
+        height="1800"
+        loading="lazy"
+      />
+      <img
+        src="{{ '/assets/images/home/craft-table.webp' | relative_url }}"
+        alt="Friends gathered around a table for a hands-on activity"
+        width="1800"
+        height="1200"
+        loading="lazy"
+      />
+      <img
+        src="{{ '/assets/images/home/group-performance.webp' | relative_url }}"
+        alt="A group performing together at the Cenaculum talent show"
+        width="1800"
+        height="1200"
+        loading="lazy"
+      />
+    </div>
   </div>
 </section>
 
 <section id="newbies" class="section section--soft">
-  <div class="container">
-    <div data-lang="eng">
-      <div class="section__header">
-        <div class="eyebrow">Newbies</div>
-        <h2>Newbies</h2>
+  <div class="container feature-with-photo">
+    <div>
+      <div data-lang="eng">
+        <div class="section__header">
+          <div class="eyebrow">Newbies</div>
+          <h2>Newbies</h2>
+        </div>
+
+        <div class="card">
+          <p>Placeholder text for newcomers goes here.</p>
+        </div>
       </div>
 
-      <div class="card">
-        <p>Placeholder text for newcomers goes here.</p>
+      <div data-lang="lat" hidden>
+        <div class="section__header">
+          <div class="eyebrow">Tirones</div>
+          <h2>Tirones</h2>
+        </div>
+
+        <div class="card">
+          <p>Hic ponetur textus pro novitiis.</p>
+        </div>
       </div>
     </div>
-
-    <div data-lang="lat" hidden>
-      <div class="section__header">
-        <div class="eyebrow">Tirones</div>
-        <h2>Tirones</h2>
-      </div>
-
-      <div class="card">
-        <p>Hic ponetur textus pro novitiis.</p>
-      </div>
-    </div>
+    <img
+      class="feature-photo"
+      src="{{ '/assets/images/home/new-friends.webp' | relative_url }}"
+      alt="A group of new friends together at Cenaculum"
+      width="1800"
+      height="1200"
+      loading="lazy"
+    />
   </div>
 </section>
 
@@ -665,45 +818,64 @@ title: CENACULUM
 
 <section id="location" class="section section--soft">
   <div class="container">
-    <div data-lang="eng">
-      <div class="section__header">
-        <div class="eyebrow">Location and travel</div>
-        <h2>Where it is and how to get there</h2>
-      </div>
-
-      <div class="split">
-        <div class="card">
-          <h3>Location</h3>
-          <p>2457 Browns Lake Drive<br />Burlington, WI 53105</p>
-          <p>
-            <a href="tel:+12626614083">(262) 661-4083</a><br /><a
-              href="mailto:retreatcenter@icksp.org"
-              >retreatcenter@icksp.org</a
-            ><br /><a href="https://shrcburlington.org/">shrcburlington.org</a>
-          </p>
-          <p>There is plenty of parking on site.</p>
-        </div>
-      </div>
+    <div class="section__header" data-lang="eng">
+      <div class="eyebrow">Location and travel</div>
+      <h2>Where it is and how to get there</h2>
     </div>
 
-    <div data-lang="lat" hidden>
-      <div class="section__header">
-        <div class="eyebrow">Locus et iter</div>
-        <h2>Ubi sit et quomodo perveniendum sit</h2>
+    <div class="section__header" data-lang="lat" hidden>
+      <div class="eyebrow">Locus et iter</div>
+      <h2>Ubi sit et quomodo perveniendum sit</h2>
+    </div>
+
+    <div class="split location-split">
+      <div>
+        <div data-lang="eng">
+          <div class="card">
+            <h3>Location</h3>
+            <p>2457 Browns Lake Drive<br />Burlington, WI 53105</p>
+            <p>
+              <a href="tel:+12626614083">(262) 661-4083</a><br /><a
+                href="mailto:retreatcenter@icksp.org"
+                >retreatcenter@icksp.org</a
+              ><br /><a href="https://shrcburlington.org/">shrcburlington.org</a>
+            </p>
+            <p>There is plenty of parking on site.</p>
+          </div>
+        </div>
+
+        <div data-lang="lat" hidden>
+          <div class="card">
+            <h3>Locus</h3>
+            <p>2457 Browns Lake Drive<br />Burlington, WI 53105</p>
+            <p>
+              <a href="tel:+12626614083">(262) 661-4083</a><br /><a
+                href="mailto:retreatcenter@icksp.org"
+                >retreatcenter@icksp.org</a
+              ><br /><a href="https://shrcburlington.org/">shrcburlington.org</a>
+            </p>
+            <p>Satis multa loca stativa ibi sunt.</p>
+          </div>
+        </div>
       </div>
 
-      <div class="split">
-        <div class="card">
-          <h3>Locus</h3>
-          <p>2457 Browns Lake Drive<br />Burlington, WI 53105</p>
-          <p>
-            <a href="tel:+12626614083">(262) 661-4083</a><br /><a
-              href="mailto:retreatcenter@icksp.org"
-              >retreatcenter@icksp.org</a
-            ><br /><a href="https://shrcburlington.org/">shrcburlington.org</a>
-          </p>
-          <p>Satis multa loca stativa ibi sunt.</p>
-        </div>
+      <div class="location-photos">
+        <img
+          class="feature-photo"
+          src="{{ '/assets/images/home/retreat-center.webp' | relative_url }}"
+          alt="Aerial view of the retreat center and its green grounds"
+          width="1536"
+          height="1150"
+          loading="lazy"
+        />
+        <img
+          class="feature-photo"
+          src="{{ '/assets/images/home/sunset-grounds.webp' | relative_url }}"
+          alt="A vivid sunset over the retreat center grounds"
+          width="1800"
+          height="1350"
+          loading="lazy"
+        />
       </div>
     </div>
   </div>

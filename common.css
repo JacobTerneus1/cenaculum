@@ -199,11 +199,62 @@ h3 {
 
 /* ---------- Link groups ---------- */
 
+.hero-section {
+  overflow: hidden;
+  padding: 88px 0 104px;
+}
+
+.hero {
+  display: grid;
+  grid-template-columns: minmax(0, 0.92fr) minmax(420px, 1.08fr);
+  align-items: center;
+  gap: clamp(48px, 7vw, 88px);
+}
+
+.hero__copy {
+  position: relative;
+  z-index: 2;
+}
+
+.hero__copy .lede {
+  margin-bottom: 0;
+}
+
 .hero__actions {
   display: flex;
   gap: 12px;
   flex-wrap: wrap;
   margin-top: 28px;
+}
+
+.hero__photos {
+  position: relative;
+  min-height: 560px;
+}
+
+.hero__photo {
+  position: absolute;
+  object-fit: cover;
+  border: 8px solid var(--card);
+  border-radius: 30px;
+  box-shadow: 0 20px 50px rgba(54, 37, 24, 0.18);
+}
+
+.hero__photo--main {
+  top: 0;
+  left: 0;
+  width: 88%;
+  height: auto;
+  transform: rotate(-2.5deg);
+}
+
+.hero__photo--accent {
+  right: -4%;
+  bottom: 0;
+  width: 55%;
+  height: auto;
+  object-position: 56% center;
+  transform: rotate(4deg);
 }
 
 /* ---------- Cards ---------- */
@@ -235,12 +286,106 @@ h3 {
   gap: 42px;
 }
 
+.feature-with-photo {
+  display: grid;
+  grid-template-columns: minmax(0, 0.9fr) minmax(420px, 1.1fr);
+  align-items: center;
+  gap: clamp(34px, 6vw, 72px);
+}
+
+.future-layout {
+  display: grid;
+  grid-template-columns: minmax(0, 0.9fr) minmax(420px, 1.1fr);
+  align-items: center;
+  gap: clamp(28px, 5vw, 56px);
+}
+
+.future-layout .feature-photo {
+  height: 360px;
+}
+
+.feature-with-photo--reverse > .feature-photo {
+  grid-column: 1;
+  grid-row: 1;
+}
+
+.feature-with-photo--reverse > div {
+  grid-column: 2;
+}
+
 /* ---------- Images ---------- */
 
 .content-image,
 .split img {
   width: 100%;
   border-radius: var(--radius);
+}
+
+.feature-photo {
+  width: 100%;
+  height: clamp(320px, 38vw, 500px);
+  object-fit: cover;
+  border-radius: var(--radius);
+  box-shadow: 0 14px 36px rgba(54, 37, 24, 0.13);
+}
+
+.photo-story {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 18px;
+  margin: 42px 0 64px;
+}
+
+.photo-story img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  border-radius: var(--radius);
+  box-shadow: 0 10px 26px rgba(54, 37, 24, 0.11);
+}
+
+.photo-story--about img:nth-child(1) {
+  object-position: center 30%;
+}
+
+.photo-story--about {
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.photo-story--about img {
+  height: 260px;
+}
+
+.photo-story--day {
+  margin-top: 52px;
+  margin-bottom: 0;
+}
+
+.photo-story--day img:nth-child(2) {
+  object-position: center 42%;
+}
+
+.photo-story--past {
+  grid-template-columns: 0.72fr 1.14fr 1.14fr;
+  margin-bottom: 0;
+}
+
+.photo-story--past img {
+  height: 360px;
+}
+
+.photo-story--past img:first-child {
+  object-position: center 28%;
+}
+
+.location-photos {
+  display: grid;
+  gap: 18px;
+}
+
+.location-photos .feature-photo {
+  height: 240px;
+  min-height: 0;
 }
 
 /* ---------- Schedule ---------- */
@@ -345,13 +490,47 @@ h3 {
 
 /* ---------- Responsive ---------- */
 
+@media (max-width: 1050px) {
+  .hero {
+    grid-template-columns: 1fr;
+    gap: 44px;
+  }
+
+  .hero__photos {
+    width: min(100%, 760px);
+    min-height: 580px;
+    margin-inline: auto;
+  }
+}
+
 @media (max-width: 900px) {
   body {
     font-size: 17px;
   }
 
+  .hero,
+  .future-layout,
+  .feature-with-photo,
   .split {
     grid-template-columns: 1fr;
+  }
+
+  .hero__photos {
+    min-height: 520px;
+  }
+
+  .feature-with-photo--reverse > .feature-photo,
+  .feature-with-photo--reverse > div {
+    grid-column: auto;
+    grid-row: auto;
+  }
+
+  .feature-with-photo--reverse > .feature-photo {
+    order: 2;
+  }
+
+  .photo-story--about {
+    grid-template-columns: repeat(2, 1fr);
   }
 
   .card-grid {
@@ -378,6 +557,58 @@ h3 {
 
   .section {
     padding: 52px 0;
+  }
+
+  .hero-section {
+    padding: 60px 0 72px;
+  }
+
+  .hero__photos {
+    min-height: clamp(390px, 72vw, 520px);
+  }
+
+  .hero__photo {
+    border-width: 5px;
+    border-radius: 22px;
+  }
+
+  .hero__photo--main {
+    top: 0;
+    left: 0;
+    width: 92%;
+    height: auto;
+  }
+
+  .hero__photo--accent {
+    right: -2%;
+    width: 58%;
+    height: auto;
+  }
+
+  .photo-story,
+  .photo-story--past {
+    grid-template-columns: 1fr;
+    gap: 14px;
+    margin: 34px 0 48px;
+  }
+
+  .photo-story img,
+  .photo-story--past img {
+    height: 260px;
+  }
+
+  .photo-story--day,
+  .photo-story--past {
+    margin-bottom: 0;
+  }
+
+  .feature-photo {
+    height: 300px;
+  }
+
+  .future-layout .feature-photo,
+  .location-photos .feature-photo {
+    height: 260px;
   }
 
   .card-grid {
