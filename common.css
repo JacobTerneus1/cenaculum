@@ -388,6 +388,50 @@ h3 {
   min-height: 0;
 }
 
+/* ---------- Family of Saint Jerome page ---------- */
+
+.family-hero,
+.family-history-layout {
+  display: grid;
+  grid-template-columns: minmax(0, 0.9fr) minmax(460px, 1.1fr);
+  align-items: center;
+  gap: clamp(36px, 6vw, 72px);
+}
+
+.family-hero__photo,
+.family-history-photo,
+.family-photo-pair img,
+.family-wide-photo {
+  width: 100%;
+  object-fit: cover;
+  border-radius: var(--radius);
+  box-shadow: 0 14px 36px rgba(54, 37, 24, 0.13);
+}
+
+.family-hero__photo {
+  height: clamp(360px, 34vw, 440px);
+}
+
+.family-photo-pair {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 18px;
+  margin-top: 38px;
+}
+
+.family-photo-pair img {
+  height: 330px;
+}
+
+.family-wide-photo {
+  height: 460px;
+  margin-top: 38px;
+}
+
+.family-history-photo {
+  height: 520px;
+}
+
 /* ---------- Schedule ---------- */
 
 .schedule {
@@ -511,8 +555,16 @@ h3 {
   .hero,
   .future-layout,
   .feature-with-photo,
+  .family-hero,
+  .family-history-layout,
   .split {
     grid-template-columns: 1fr;
+  }
+
+  .family-hero__photo,
+  .family-history-photo,
+  .family-wide-photo {
+    height: 420px;
   }
 
   .hero__photos {
@@ -609,6 +661,17 @@ h3 {
   .future-layout .feature-photo,
   .location-photos .feature-photo {
     height: 260px;
+  }
+
+  .family-photo-pair {
+    grid-template-columns: 1fr;
+  }
+
+  .family-photo-pair img,
+  .family-hero__photo,
+  .family-history-photo,
+  .family-wide-photo {
+    height: 280px;
   }
 
   .card-grid {
