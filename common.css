@@ -366,7 +366,7 @@ h3 {
 }
 
 .photo-story--past {
-  grid-template-columns: 0.72fr 1.14fr 1.14fr;
+  grid-template-columns: 0.72fr repeat(3, 1.14fr);
   margin-bottom: 0;
 }
 
