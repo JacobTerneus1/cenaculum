@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="{% if page.latin_only %}la{% else %}en{% endif %}">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -15,7 +15,11 @@
     <header class="site-header">
       <div class="container nav">
         <a class="logo" href="{{ '/' | relative_url }}">CENACULUM</a>
-        <nav class="nav__links" aria-label="Primary">
+        <nav
+          class="nav__links"
+          aria-label="{% if page.latin_only %}Lingua{% else %}Primary{% endif %}"
+        >
+          {% unless page.latin_only %}
           <a
             class="button button--secondary lang-toggle"
             href="?lang=eng"
@@ -24,12 +28,13 @@
             aria-label="Show English"
             >ENG</a
           >
+          {% endunless %}
           <a
-            class="button button--ghost lang-toggle"
+            class="button {% if page.latin_only %}button--secondary{% else %}button--ghost{% endif %} lang-toggle"
             href="?lang=lat"
             data-lang-toggle="lat"
-            aria-pressed="false"
-            aria-label="Show Latin"
+            aria-pressed="{% if page.latin_only %}true{% else %}false{% endif %}"
+            aria-label="{% if page.latin_only %}Latine{% else %}Show Latin{% endif %}"
             >LAT</a
           >
         </nav>
@@ -47,6 +52,7 @@
     <script>
       (() => {
         const lang =
+          document.documentElement.lang === "la" ||
           new URLSearchParams(window.location.search).get("lang") === "lat"
             ? "lat"
             : "eng";
